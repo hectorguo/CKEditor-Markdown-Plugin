@@ -5,7 +5,7 @@ This is a plugin for CKEditor, you can use `markdown` mode in CKEditor. Moreover
 ## Get Started
 It needs [ckeditor standard version](http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_standard.zip)
 
-You can see the [DEMO](#)
+You can see the [DEMO](http://hectorguo.github.io/CKEditor-Markdown-Plugin/)
 
 ## Usage
 1. Create a folder named `markdown` in `ckeditor/plugins` path;
