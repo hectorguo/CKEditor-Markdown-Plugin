@@ -1,18 +1,24 @@
 {
   "name": "ckeditor-markdown-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/hectorguo/CKEditor-Markdown-Plugin",
   "authors": [
     "HectorGuo<https://github.com/hectorguo>"
   ],
+  "dependencies": {
+    "ckeditor": ">= 4.4.7"
+  },
   "description": "This is a plugin for CKEditor, you can use markdown mode in CKEditor. Moreover, your article in WYSIWYG mode can be translated to markdown.",
   "keywords": [
     "ckeditor",
     "plugin",
     "markdown"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/hectorguo/CKEditor-Markdown-Plugin.git"
-  }
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
