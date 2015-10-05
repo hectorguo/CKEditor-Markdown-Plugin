@@ -8,11 +8,16 @@ It needs [ckeditor standard version](http://download.cksource.com/CKEditor/CKEdi
 You can see the [DEMO](http://hectorguo.github.io/CKEditor-Markdown-Plugin/)
 
 ## Usage
-1. Download the source, and uncompress  `markdown` folder into `ckeditor/plugins` path; or use bower install
+### Using Bower
 ```
 bower install ckeditor-markdown-plugin
 ```
-2. Edit `config.js` (such as `ckeditor/config.js`):
+Then move `markdown` folder to `ckeditor/plugins` path;
+
+### Manually Install
+Download the source, and uncompress `markdown` folder into `ckeditor/plugins` path; 
+
+Edit `config.js` (such as `ckeditor/config.js`):
 ```javascript
 	config.extraPlugins = 'markdown'; // add this plugin
 ```
