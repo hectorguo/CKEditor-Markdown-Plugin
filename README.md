@@ -8,16 +8,8 @@ It needs [ckeditor standard version](http://download.cksource.com/CKEditor/CKEdi
 You can see the [DEMO](http://hectorguo.github.io/CKEditor-Markdown-Plugin/)
 
 ## Usage
-### Using Bower
-```
-bower install ckeditor-markdown-plugin
-```
-Then move `markdown` folder to `ckeditor/plugins` path;
-
-### Manually Install
-Download the source, and uncompress `markdown` folder into `ckeditor/plugins` path; 
-
-Edit `config.js` (such as `ckeditor/config.js`):
+1. Download the source, and uncompress `markdown` folder into `ckeditor/plugins` path; 
+2. Edit `config.js` (such as `ckeditor/config.js`):
 ```javascript
 	config.extraPlugins = 'markdown'; // add this plugin
 ```
@@ -59,6 +51,11 @@ CKEDITOR.editorConfig = function( config ) {
 	// Simplify the dialog windows.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 };
+```
+
+You can also use bower to install it.
+```
+bower install ckeditor-markdown-plugin
 ```
 
 ## Thanks
