@@ -51,7 +51,7 @@
                 editor.ui.space('contents').append(textarea);
 
                 var editable = editor.editable(new sourceEditable(editor, textarea)),
-                    htmlData = editor.getData(1);
+                    htmlData = editor.getData(1).replace(/(\r\n|\n|\r)/gm,""); // remove all linebreaks to prevent some parsing issues
 
                 // Convert to Markdown and Fill the textarea.
                 if (typeof(toMarkdown) == 'undefined') {
