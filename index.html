@@ -40,7 +40,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 
 <body>
     <h3>Demo</h3>
-    <textarea cols="100" id="editor1" name="editor1" rows="10" style="visibility: hidden; display: none;">&lt;h3&gt;Welcome to CKEditor.&lt;/h3&gt;&lt;p&gt;This editor integrate &lt;strong&gt;markdown plugin&lt;/strong&gt;.&lt;/p&gt;</textarea>
+    <textarea cols="100" id="editor1" name="editor1" rows="10" style="visibility: hidden; display: none;">&lt;h3&gt;Welcome to CKEditor.&lt;/h3&gt;&lt;p&gt;This &lt;em&gt;editor&lt;/em&gt; integrate &lt;strong&gt;markdown plugin&lt;/strong&gt;.&lt;/p&gt;&lt;ol&gt;&lt;li&gt;no1&lt;/li&gt;&lt;li&gt;no2&lt;ol&gt;&lt;li&gt;no2-1&lt;/li&gt;&lt;li&gt;no2-2&lt;/li&gt;  &lt;/ol&gt; &lt;/li&gt; &lt;li&gt;no3&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;This is a &lt;a href="https://github.com/hectorguo/CKEditor-Markdown-Plugin"&gt;link&lt;/a&gt;&lt;/p&gt;</textarea>
 
     <h3>Source Code</h3>
     <pre class="samples">
@@ -49,7 +49,9 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
     CKEDITOR.replace('editor1', {
         toolbarGroups: [
             {name: 'tools'},
+            {name: 'links'},
             {name: 'basicstyles', groups: ['basicstyles', 'cleanup']},
+            {name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ]},
             {name: 'styles'},
             {name: 'others'}
         ],
@@ -60,16 +62,14 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 </body>
 <script>
 CKEDITOR.replace('editor1', {
-    toolbarGroups: [{
-        name: 'tools'
-    }, {
-        name: 'basicstyles',
-        groups: ['basicstyles', 'cleanup']
-    }, {
-        name: 'styles'
-    }, {
-        name: 'others'
-    }],
+    toolbarGroups: [
+        {name: 'tools'},
+        {name: 'links'},
+        {name: 'basicstyles', groups: ['basicstyles', 'cleanup']},
+        { name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
+        {name: 'styles'},
+        {name: 'others'}
+    ],
     extraPlugins: 'markdown'
 });
 </script>
