@@ -89,7 +89,12 @@
                 }
 
                 editor.fire('ariaWidget', this);
-                editor.commands.maximize.modes.markdown = 1;
+
+                //If the maximize plugin is not installed, then this throws an error when first
+                //launching the markdown plugin. Fixing this by first checking for the Maximize plugin.
+                if(typeof editor.commands.maximize !== 'undefined'){
+                    editor.commands.maximize.modes.markdown = 1;
+                }
                 callback();
             });
 
