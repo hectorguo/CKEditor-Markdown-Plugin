@@ -22,7 +22,8 @@
                 defaultConfig = {
                     mode: 'gfm',
                     lineNumbers: true,
-                    theme: 'default'
+                    theme: 'default',
+                    readOnly : ('disabled' == editor.element.getAttribute('disabled'))
                 };
             editor.config.markdown = CKEDITOR.tools.extend(defaultConfig, editor.config.markdown || {}, true);
 
